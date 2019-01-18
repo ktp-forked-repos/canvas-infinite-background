@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas infinite background</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background-color: #999;
+    }
+
+    #info {
+      padding: 10px 0 0 10px;
+      font-size: 20px;
+    }
+
+    #container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #my-canvas {
+      background-color: #ccc;
+    }
+  </style>  
+</head>
+<body>
+  <div id="info">
+    FPS: <span id="fps">calculating...</span>
+    Frames: <span id="frames">0</span>
+  </div>
+  <div id="container">
+    <canvas id="my-canvas" width="500" height="500">
+      Your browser does not support canvas!
+    </canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
